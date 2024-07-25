@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import Button from './Button'; // Adjust the import path as needed
+import Button from './Button'; 
 
 const HomeStarted: React.FC = () => {
   const navigate = useNavigate();
@@ -14,7 +14,7 @@ const HomeStarted: React.FC = () => {
           content="Get Started"
           className="bg-purple-500 text-white py-2 px-3 rounded-md mt-2 hover:bg-purple-800"
           onClick={() => {
-            navigate('/home'); // Navigate to /home
+            navigate('/home'); 
           }}
         />
       </div>

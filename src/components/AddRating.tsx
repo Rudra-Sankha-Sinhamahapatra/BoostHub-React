@@ -4,7 +4,7 @@ import axios from "axios";
 import Button from "./Button";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { BACKEND_URL } from "../conf"; // Adjust the path as needed
+import { BACKEND_URL } from "../conf"; 
 
 interface Rating {
   id: number;

@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Button from './Button';
-import { BACKEND_URL } from '../conf'; // Adjust the import path as needed
+import { BACKEND_URL } from '../conf'; 
 
 export function CreateCourse() {
   const [title, setTitle] = useState<string>('');

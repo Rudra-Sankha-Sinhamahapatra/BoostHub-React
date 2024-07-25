@@ -119,7 +119,7 @@ if(error){
                         {feedbacks.map((feed) => (
                             <div key={feed.id} className="p-4 border border-gray-300 rounded-lg mb-3 dark:border-gray-700">
                                 <div className="flex items-center justify-between">
-                                    <div className="text-lg font-semibold">
+                                    <div className="text-lg font-semibold dark:text-white">
                                         {feed.user ? feed.user.name : "Anonymous"}
                                     </div>
                                     <div className="text-sm text-gray-500">

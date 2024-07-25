@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import Cookie from 'js-cookie'; // For cookie handling
+import Cookie from 'js-cookie'; 
 import NoPage from './NoPage';
 import CreateAccount from './CreateAccount';
 
@@ -7,13 +7,11 @@ const Signup = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   useEffect(() => {
-    const token = Cookie.get('token'); // Retrieve the token from cookies
+    const token = Cookie.get('token'); 
 
     if (token) {
-      // If token exists, consider the user logged in
       setIsLoggedIn(true);
     } else {
-      // If token doesn't exist, user is not logged in
       setIsLoggedIn(false);
     }
   }, []);

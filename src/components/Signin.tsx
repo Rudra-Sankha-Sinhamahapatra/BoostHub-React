@@ -7,9 +7,8 @@ const Signin = () => {
   const [isLoggedIn, setIsLoggedIn] = useState<boolean>(false);
 
   useEffect(() => {
-    const token = Cookies.get('token'); // Get the cookie
+    const token = Cookies.get('token'); 
 
-    // Check if the cookie exists
     if (token) {
       setIsLoggedIn(true);
     } else {

@@ -9,7 +9,7 @@ export const GetStarted: React.FC = () => {
   const cookies = new Cookies();
   const token = cookies.get('token');
 
-  console.log('Token:', token); // Debugging log
+  // console.log('Token:', token); 
 
   if (token) {
     console.log('User is authenticated, rendering HomeStarted');
