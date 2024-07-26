@@ -56,7 +56,7 @@ const InputBox: React.FC<InputBoxProps> = ({
         const cookies=new Cookies();
         toast.success("Signed In Successfully!");
     
-        cookies.set("token",res.data.token,{path:"/",httpOnly:false,maxAge: 30 * 24 * 60 *  60 * 1000,});
+        cookies.set("token",res.data.token,{path:"/",httpOnly:false,maxAge: 30 * 24 * 60 *  60,});
         console.log(cookies.get('token'))
         setTimeout(() => {
           navigate('/home');
@@ -87,7 +87,7 @@ const InputBox: React.FC<InputBoxProps> = ({
       if (res.status === 200) {
         const cookies=new Cookies();
         toast.success("Signed Up Successfully!");
-        cookies.set("token",res.data.token,{path:"/",httpOnly:false,maxAge: 30 * 24 * 60 *  60 * 1000,});
+        cookies.set("token",res.data.token,{path:"/",httpOnly:false,maxAge: 30 * 24 * 60 *  60 ,});
         console.log(cookies.get('token'))
         setTimeout(() => {
           navigate('/home');
