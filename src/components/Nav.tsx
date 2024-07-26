@@ -6,9 +6,11 @@ import 'react-toastify/dist/ReactToastify.css';
 import axios from "axios";
 import Button from "./Button";
 import { BACKEND_URL } from "../conf";
+import Cookies from "universal-cookie";
 
 const Nav: React.FC = () => {
     const navigate = useNavigate();
+
 
     const homeHandler = useCallback(() => {
         navigate(`/home`);
@@ -33,7 +35,9 @@ const Nav: React.FC = () => {
             });
 
             if (res.status === 200) {
+                const cookies=new Cookies();
                 toast.success("Logged out Successfully!");
+                cookies.remove('token');
 
                 setTimeout(() => {
                     navigate('/');
