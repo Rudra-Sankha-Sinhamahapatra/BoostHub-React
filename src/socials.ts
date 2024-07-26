@@ -1,6 +1,6 @@
 
 export const Socials={
     linkedin: 'https://www.linkedin.com/in/rudra-sankha-sinhamahapatra-6311aa1bb/',
-    github: 'https://github.com/Rudra-Sankha-Sinhamahapatra/BoostHub',
+    github: 'https://github.com/Rudra-Sankha-Sinhamahapatra',
     twitter: 'https://x.com/RudraSankha'
 }
