@@ -95,15 +95,15 @@ const ViewCourseDetails: React.FC = () => {
     };
 
     if (loading) {
-        return <div className="dark:text-white flex justify-center mt-10">Loading ...</div>;
+        return       <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">Loading ...</div>;
     }
 
     if (error) {
-        return <div className="dark:text-white flex justify-center mt-10">Error Occurred: {error}</div>;
+        return       <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">Error Occurred: {error}</div>;
     }
 
     if (!course) {
-        return <div className="dark:text-white flex justify-center mt-10">No course details available</div>;
+        return       <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">No course details available</div>;
     }
 
     return (

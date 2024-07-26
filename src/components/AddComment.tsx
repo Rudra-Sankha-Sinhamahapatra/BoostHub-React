@@ -68,7 +68,7 @@ const AddComment  = () => {
 
 
     if(error){
-        return <div>{error}</div>
+        return       <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">{error}</div>
     }
 
     return (

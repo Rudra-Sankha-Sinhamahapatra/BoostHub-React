@@ -49,7 +49,7 @@ const MyCourses = () => {
 
   if (loading) {
     return (
-      <div className="dark:text-white flex justify-center mt-10">
+      <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">
         Loading ...
       </div>
     );
@@ -57,7 +57,7 @@ const MyCourses = () => {
 
   if (error) {
     return (
-      <div className="dark:text-white flex justify-center mt-10">
+      <div className="dark:text-white dark:bg-black text-center flex justify-center pt-10">
         Error Occurred: {error}
       </div>
     );
